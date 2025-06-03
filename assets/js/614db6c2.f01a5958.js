@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshu_doc=self.webpackChunkshu_doc||[]).push([[9491],{3451:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/shuri-doc/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
