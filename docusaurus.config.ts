@@ -89,7 +89,7 @@ const config: Config = {
           label: '📚 Documentation',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/soheilnikroo/shuri-doc',
           label: 'GitHub',
           position: 'right',
         },
