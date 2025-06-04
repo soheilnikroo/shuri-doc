@@ -1,4 +1,4 @@
-import { Github, Twitter, Heart } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -21,12 +21,6 @@ const Footer = () => {
                 className="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-300 hover:scale-110 transform"
               >
                 <Github className="h-6 w-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-300 hover:scale-110 transform"
-              >
-                <Twitter className="h-6 w-6" />
               </a>
             </div>
           </div>
@@ -61,14 +55,6 @@ const Footer = () => {
                   Examples
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
-                >
-                  Migration Guide
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -90,22 +76,6 @@ const Footer = () => {
                   href="#"
                   className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
                 >
-                  Discord
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
-                >
-                  Stack Overflow
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
-                >
                   Contribute
                 </a>
               </li>
@@ -116,10 +86,6 @@ const Footer = () => {
         <div className="border-t border-red-200 dark:border-red-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 dark:text-gray-400 text-sm">
             © 2024 Shuriken CLI. Open source with MIT license.
-          </p>
-          <p className="text-gray-600 dark:text-gray-400 text-sm flex items-center gap-1 mt-4 md:mt-0">
-            Made with <Heart className="h-4 w-4 text-red-500 animate-pulse" />{' '}
-            by developers, for developers
           </p>
         </div>
       </div>
