@@ -8,6 +8,7 @@ import {
 } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { useEffect, useState, useRef } from 'react';
+import Link from '@docusaurus/Link';
 
 const Documentation = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -177,14 +178,16 @@ const Documentation = () => {
             </CardHeader>
             <CardContent className="text-center relative z-10">
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button
-                  size="lg"
-                  className="group bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-red-500/25"
-                >
-                  <Book className="mr-3 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-                  Read Full Docs
-                  <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </Button>
+                <Link href="/docs/intro">
+                  <Button
+                    size="lg"
+                    className="group bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-red-500/25"
+                  >
+                    <Book className="mr-3 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
+                    Read Full Docs
+                    <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </Button>
+                </Link>
                 <Button
                   variant="outline"
                   size="lg"

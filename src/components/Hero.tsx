@@ -1,6 +1,7 @@
 import { ArrowRight, Github, Sparkles, Zap } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { useEffect, useState } from 'react';
+import Link from '@docusaurus/Link';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -193,34 +194,38 @@ const Hero = () => {
                 : 'opacity-0 translate-y-5'
             }`}
           >
-            <Button
-              size="lg"
-              className="group relative bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 dark:from-red-500 dark:to-red-600 dark:hover:from-red-600 dark:hover:to-red-700 text-white px-12 py-4 text-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-red-500/30 rounded-full border-0 overflow-hidden"
-              onMouseEnter={() => setHoveredButton('start')}
-              onMouseLeave={() => setHoveredButton(null)}
-            >
-              {/* Ninja strike effect on hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-              <Sparkles className="mr-3 h-5 w-5 transition-transform duration-300 group-hover:rotate-180" />
-              Get Started
-              <ArrowRight
-                className={`ml-3 h-5 w-5 transition-transform duration-300 ${
-                  hoveredButton === 'start' ? 'translate-x-2' : ''
-                }`}
-              />
-            </Button>
+            <Link href="/docs/tutorial-extras/manage-docs-versions">
+              <Button
+                size="lg"
+                className="group relative bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 dark:from-red-500 dark:to-red-600 dark:hover:from-red-600 dark:hover:to-red-700 text-white px-12 py-4 text-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-red-500/30 rounded-full border-0 overflow-hidden"
+                onMouseEnter={() => setHoveredButton('start')}
+                onMouseLeave={() => setHoveredButton(null)}
+              >
+                {/* Ninja strike effect on hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                <Sparkles className="mr-3 h-5 w-5 transition-transform duration-300 group-hover:rotate-180" />
+                Get Started
+                <ArrowRight
+                  className={`ml-3 h-5 w-5 transition-transform duration-300 ${
+                    hoveredButton === 'start' ? 'translate-x-2' : ''
+                  }`}
+                />
+              </Button>
+            </Link>
 
-            <Button
-              variant="outline"
-              size="lg"
-              className="group border-2 border-red-300/50 dark:border-red-700/50 text-red-700 dark:text-red-300 hover:bg-red-50/50 dark:hover:bg-red-950/20 hover:border-red-400 dark:hover:border-red-600 px-12 py-4 text-lg transition-all duration-300 hover:scale-110 rounded-full backdrop-blur-sm relative overflow-hidden"
-              onMouseEnter={() => setHoveredButton('github')}
-              onMouseLeave={() => setHoveredButton(null)}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-red-500/0 via-red-500/10 to-red-500/0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
-              <Github className="mr-3 h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
-              View Source
-            </Button>
+            <Link href="https://github.com/soheilnikroo/shuri-doc">
+              <Button
+                variant="outline"
+                size="lg"
+                className="group border-2 border-red-300/50 dark:border-red-700/50 text-red-700 dark:text-red-300 hover:bg-red-50/50 dark:hover:bg-red-950/20 hover:border-red-400 dark:hover:border-red-600 px-12 py-4 text-lg transition-all duration-300 hover:scale-110 rounded-full backdrop-blur-sm relative overflow-hidden"
+                onMouseEnter={() => setHoveredButton('github')}
+                onMouseLeave={() => setHoveredButton(null)}
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-red-500/0 via-red-500/10 to-red-500/0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                <Github className="mr-3 h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
+                View Source
+              </Button>
+            </Link>
           </div>
 
           {/* Enhanced interactive stats with ninja effects */}
