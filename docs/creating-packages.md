@@ -538,7 +538,7 @@ Now that you can create packages:
 
 1. ⚡ **[Master Command Definitions](./commands)** - Build sophisticated commands
 2. 🔄 **[Learn Migration System](./migrations)** - Handle version upgrades
-3. 💡 **[Explore Examples](./examples)** - See real-world implementations
+3. 💡 **[Explore Examples](./commands)** - See real-world implementations
 4. 🌟 **[Follow Best Practices](./best-practices)** - Build maintainable packages
 
 ---

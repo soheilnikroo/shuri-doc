@@ -235,7 +235,7 @@ Now that Shuriken CLI is installed:
 
 1. 📚 **[Learn Core Concepts](./concepts)** - Understand how Shuriken works
 2. 🏗️ **[Create Your First Package](./creating-packages)** - Build a custom CLI package
-3. 💡 **[Browse Examples](./examples)** - See real-world implementations
+3. 💡 **[Browse Examples](./commands)** - See real-world implementations
 
 ---
 
