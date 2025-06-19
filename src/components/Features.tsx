@@ -1,6 +1,7 @@
 import { Zap, Puzzle, Shield, Code, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import { useEffect, useState, useRef } from 'react';
+import Link from '@docusaurus/Link';
 
 const Features = () => {
   const [visibleFeatures, setVisibleFeatures] = useState<boolean[]>([]);
@@ -14,6 +15,7 @@ const Features = () => {
       description:
         'Built on Inversion of Control principles for maximum flexibility and testability.',
       color: 'red-500',
+      href: '/docs/ioc-pattern',
     },
     {
       icon: <Zap className="h-8 w-8" />,
@@ -21,6 +23,7 @@ const Features = () => {
       description:
         'Add new commands in seconds with our modular design and hot-reload capabilities.',
       color: 'red-600',
+      href: '/docs/how-to-extend',
     },
     {
       icon: <Shield className="h-8 w-8" />,
@@ -28,6 +31,7 @@ const Features = () => {
       description:
         'Production-ready with comprehensive error handling and graceful failures.',
       color: 'red-700',
+      href: '/docs/test',
     },
     {
       icon: <Code className="h-8 w-8" />,
@@ -35,6 +39,7 @@ const Features = () => {
       description:
         'Intuitive API with TypeScript support and comprehensive documentation.',
       color: 'red-800',
+      href: '/docs/typesafe',
     },
   ];
 
@@ -108,14 +113,16 @@ const Features = () => {
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
                       {feature.description}
                     </p>
-                    <div
-                      className={`flex items-center text-red-600 dark:text-red-400 font-medium transition-all duration-300 ${
-                        hoveredCard === index ? 'translate-x-2' : ''
-                      }`}
-                    >
-                      Learn more
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </div>
+                    <Link href={feature.href}>
+                      <div
+                        className={`flex items-center text-red-600 dark:text-red-400 font-medium transition-all duration-300 ${
+                          hoveredCard === index ? 'translate-x-2' : ''
+                        }`}
+                      >
+                        Learn more
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </CardContent>

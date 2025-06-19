@@ -183,8 +183,8 @@ const Hero = () => {
                 : 'opacity-0 translate-y-5'
             }`}
           >
-            Master the art of command-line development with IoC patterns. Swift,
-            modular, and deadly accurate.
+            Master the art of command-line development with IoC patterns.
+            Modular, and deadly accurate.
           </p>
 
           <div
@@ -194,7 +194,7 @@ const Hero = () => {
                 : 'opacity-0 translate-y-5'
             }`}
           >
-            <Link href="/docs/tutorial-extras/manage-docs-versions">
+            <Link href="/docs/">
               <Button
                 size="lg"
                 className="group relative bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 dark:from-red-500 dark:to-red-600 dark:hover:from-red-600 dark:hover:to-red-700 text-white px-12 py-4 text-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-red-500/30 rounded-full border-0 overflow-hidden"
@@ -230,7 +230,7 @@ const Hero = () => {
 
           {/* Enhanced interactive stats with ninja effects */}
           <div
-            className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto transition-all duration-1000 delay-900 ${
+            className={`grid pb-10 grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto transition-all duration-1000 delay-900 ${
               isVisible
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-5'
@@ -250,7 +250,7 @@ const Hero = () => {
               {
                 icon: '⚡',
                 label: 'Modular Design',
-                description: 'Plugin ecosystem',
+                description: 'Easily extendable',
               },
             ].map((stat, index) => (
               <div

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader } from '../components/ui/card';
 import { Copy, Check, Play, Terminal } from 'lucide-react';
+import Link from '@docusaurus/Link';
 
 const CodeExamples = () => {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
@@ -13,13 +14,13 @@ const CodeExamples = () => {
     {
       title: 'Quick Install',
       description: 'Get started in seconds',
-      code: `npm install -g shuriken-cli\n\n# Initialize your project\nshuriken init my-cli\n\n# Start building\ncd my-cli && shuriken dev`,
+      code: `npm install -g shuriken\n\n# Run the command of your packages\nshuriken <package-name> <command>\n`,
       icon: <Terminal className="h-5 w-5" />,
     },
     {
       title: 'Create Command',
       description: 'IoC pattern in action',
-      code: `@Injectable()\nexport class DeployCommand implements Command {\n  name = 'deploy';\n  description = 'Deploy with precision';\n\n  async execute(args: string[]) {\n    console.log('🥷 Deployed!');\n  }\n}`,
+      code: `import type { ICommandDefinition } from '@/types';\n\n export const DeployCommand: ICommandDefinition {\n  name = 'deploy';\n  description = 'Deploy with precision';\n\n  async execute(args: string[]) {\n    console.log('🥷 Deployed!');\n  }\n}`,
       icon: <Play className="h-5 w-5" />,
     },
     {
@@ -145,15 +146,17 @@ const CodeExamples = () => {
         </div>
 
         {/* Interactive demo button */}
-        <div className="text-center mt-12">
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-red-500/25"
-          >
-            <Play className="mr-2 h-5 w-5" />
-            Try Interactive Demo
-          </Button>
-        </div>
+        <Link href="/intreactive-preview">
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-red-500/25"
+            >
+              <Play className="mr-2 h-5 w-5" />
+              Try Interactive Demo
+            </Button>
+          </div>
+        </Link>
       </div>
     </section>
   );

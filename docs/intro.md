@@ -1,47 +1,104 @@
 ---
 sidebar_position: 1
+slug: /
+title: Introduction
+description: Shuriken CLI - A ninja-inspired, modular CLI framework for organizations
 ---
 
-# Tutorial Intro
+# 🥷 Shuriken CLI
 
-Let's discover **Docusaurus in less than 5 minutes**.
+> A ninja-inspired, modular CLI framework for organizations to manage and extend their own custom tooling with minimal overhead.
 
-## Getting Started
+## What is Shuriken CLI?
 
-Get started by **creating a new site**.
+Shuriken CLI is a **TypeScript-built**, **Inversify-powered**, modular command-line framework designed to help teams build, maintain, and share internal developer tools. Inspired by the precision of ninja tactics, it:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- **Discovers** commands dynamically from your `packages/` folder
+- **Loads** only what you invoke (lazy-loading) for lightning-fast startup
+- **Scaffolds** new packages via a single helper script
+- **Manages** version migrations out of the box
+- **Logs** with colorful, fun, timestamped prefixes
 
-### What you'll need
+## The Problem Every Growing Company Faces
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+### 🤕 Onboarding Overwhelm
 
-## Generate a new site
+New developers face a maze of:
 
-Generate a new Docusaurus site using the **classic template**.
+- **Naming conventions**: kebab-case, PascalCase, or snake_case?
+- **Project structure**: Which folders must exist? Where do tests live?
+- **Deployment rituals**: Internal CLI? CI/CD pipeline? Terraform script?
 
-The classic template will automatically be added to your project after you run the command:
+### 📚 Documentation Drift
+
+As teams grow, documentation ages:
+
+- Guides reference decommissioned CI steps
+- Outdated lint rules cause confusion
+- Each project drifts into its own style
+
+### 🔄 Migration Mayhem
+
+Updating shared packages requires:
+
+- Writing migration guides
+- Scheduling demo meetings
+- Following up on Slack threads
+- Hopes and prayers that everyone updates correctly
+
+## How Shuriken Solves This
+
+Shuriken CLI offers a **single source of truth** for:
+
+| Feature               | Description                                      |
+| --------------------- | ------------------------------------------------ |
+| 🚀 **Setup**          | Quickly scaffold new projects or packages        |
+| 🔄 **Update/Migrate** | Automatically apply versioned migrations         |
+| 🛠️ **Custom Actions** | Script any repeated task with type-safe commands |
+
+### Single Interface
 
 ```bash
-npm init docusaurus@latest my-website classic
+# Run any package command
+shuriken <package-name> <command> [--options]
+
+# List all packages and commands
+shuriken help
+
+# Examples
+shuriken ui-kit setup
+shuriken jarvis component Button
+shuriken backend-tools migrate --version 2.1.0
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Key Benefits
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+✅ **Modular Architecture** - Place any number of packages under `packages/`—Shuriken auto-discovers them  
+✅ **Lazy Command Loading** - Only the commands you call are loaded into memory  
+✅ **Built‑in Setup & Update** - Core `setup` and `update` commands for installing and migrating  
+✅ **Scaffolding Helper** - `prepare-package` script bootstraps new package templates  
+✅ **Custom Commands** - Define additional commands per package  
+✅ **Configurable Logging** - Ninja‑themed logs with color, timestamps, and fun prefixes  
+✅ **Pluggable Migrations** - Author migration scripts for version upgrades
 
-## Start your site
+## Architecture Overview
 
-Run the development server:
-
-```bash
-cd my-website
-npm run start
+```
+shuriken
+├── packages/           # Your custom packages
+│   ├── ui-kit/
+│   ├── jarvis/
+│   └── backend-tools/
+├── src/               # Core CLI engine
+├── scripts/           # Helper scripts
+└── docs/             # Documentation
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+## Next Steps
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Ready to get started? Choose your path:
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- 📦 **[Installation](./installation)** - Set up Shuriken CLI
+- 🎯 **[Core Concepts](./concepts)** - Understand the architecture
+- 🛠️ **[Creating Packages](./creating-packages)** - Build your first package
+- 💡 **[Examples](./examples)** - See real-world implementations

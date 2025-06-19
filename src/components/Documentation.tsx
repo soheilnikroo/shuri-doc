@@ -28,6 +28,7 @@ const Documentation = () => {
       ],
       color: 'red-500',
       gradient: 'from-red-500/10 to-red-600/10',
+      href: '/docs/',
     },
     {
       icon: <Book className="h-6 w-6" />,
@@ -41,6 +42,7 @@ const Documentation = () => {
       ],
       color: 'red-600',
       gradient: 'from-red-600/10 to-red-700/10',
+      href: '/docs/concepts',
     },
     {
       icon: <FileText className="h-6 w-6" />,
@@ -54,6 +56,7 @@ const Documentation = () => {
       ],
       color: 'red-700',
       gradient: 'from-red-700/10 to-red-800/10',
+      href: '/docs/apai-reference',
     },
   ];
 
@@ -145,14 +148,16 @@ const Documentation = () => {
                     </li>
                   ))}
                 </ul>
-                <div
-                  className={`mt-6 flex items-center text-red-600 dark:text-red-400 font-medium transition-all duration-300 ${
-                    hoveredCard === index ? 'translate-x-2' : ''
-                  }`}
-                >
-                  Explore docs
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </div>
+                <Link href={section.href}>
+                  <div
+                    className={`mt-6 flex items-center text-red-600 dark:text-red-400 font-medium transition-all duration-300 ${
+                      hoveredCard === index ? 'translate-x-2' : ''
+                    }`}
+                  >
+                    Explore docs
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </div>
+                </Link>
               </CardContent>
             </Card>
           ))}
@@ -178,7 +183,7 @@ const Documentation = () => {
             </CardHeader>
             <CardContent className="text-center relative z-10">
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Link href="/docs/intro">
+                <Link href="/docs/">
                   <Button
                     size="lg"
                     className="group bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-red-500/25"
@@ -188,14 +193,16 @@ const Documentation = () => {
                     <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                   </Button>
                 </Link>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-2 border-red-300/50 dark:border-red-700/50 text-red-700 dark:text-red-300 hover:bg-red-50/50 dark:hover:bg-red-950/20 hover:border-red-400 dark:hover:border-red-600 px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 backdrop-blur-sm"
-                >
-                  <ExternalLink className="mr-3 h-5 w-5" />
-                  View Examples
-                </Button>
+                <Link href="/examples">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="border-2 border-red-300/50 dark:border-red-700/50 text-red-700 dark:text-red-300 hover:bg-red-50/50 dark:hover:bg-red-950/20 hover:border-red-400 dark:hover:border-red-600 px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 backdrop-blur-sm"
+                  >
+                    <ExternalLink className="mr-3 h-5 w-5" />
+                    View Examples
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
