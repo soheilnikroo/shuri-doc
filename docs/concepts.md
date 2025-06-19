@@ -358,9 +358,9 @@ logger.debug('🔍 Processing file: component.tsx');
 Now that you understand the core concepts:
 
 1. 🏗️ **[Create Your First Package](./creating-packages)** - Put theory into practice
-2. ⚡ **[Learn Command Definitions](./commands)** - Build powerful commands
-3. 🔄 **[Master Migrations](./migrations)** - Handle version upgrades
-4. 💡 **[Explore Examples](./commands)** - See real-world implementations
+2. ⚡ **[Learn Command Definitions](./commands.md)** - Build powerful commands
+3. 🔄 **[Master Migrations](./commands.md)** - Handle version upgrades
+4. 💡 **[Explore Examples](./commands.md)** - See real-world implementations
 
 ---
 

@@ -771,10 +771,10 @@ describe('BuildCommand', () => {
 
 Now that you've mastered commands:
 
-1. 🔄 **[Learn Migration System](./migrations)** - Handle version upgrades gracefully
-2. 💡 **[Explore Examples](./commands)** - See complete real-world implementations
-3. 🌟 **[Follow Best Practices](./best-practices)** - Build maintainable commands
-4. 🔧 **[API Reference](./api-reference)** - Dive into the technical details
+1. 🔄 **[Learn Migration System](/)** - Handle version upgrades gracefully
+2. 💡 **[Explore Examples](/)** - See complete real-world implementations
+3. 🌟 **[Follow Best Practices](/)** - Build maintainable commands
+4. 🔧 **[API Reference](/)** - Dive into the technical details
 
 ---
 

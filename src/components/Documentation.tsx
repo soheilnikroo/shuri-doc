@@ -56,7 +56,7 @@ const Documentation = () => {
       ],
       color: 'red-700',
       gradient: 'from-red-700/10 to-red-800/10',
-      href: '/docs/apai-reference',
+      href: '/docs/commands',
     },
   ];
 

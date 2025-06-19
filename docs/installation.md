@@ -224,7 +224,7 @@ pnpm install
 
 If you encounter issues:
 
-1. Check the [troubleshooting guide](./troubleshooting)
+1. Check the [troubleshooting guide](./commands.md)
 2. Search existing [GitHub issues](https://github.com/your-org/shuriken-cli/issues)
 3. Join our community discussions
 4. Open a new issue with detailed information
@@ -235,7 +235,7 @@ Now that Shuriken CLI is installed:
 
 1. 📚 **[Learn Core Concepts](./concepts)** - Understand how Shuriken works
 2. 🏗️ **[Create Your First Package](./creating-packages)** - Build a custom CLI package
-3. 💡 **[Browse Examples](./commands)** - See real-world implementations
+3. 💡 **[Browse Examples](./commands.md)** - See real-world implementations
 
 ---
 

@@ -57,12 +57,12 @@ The `index.ts` file is the heart of your package:
 import type { IPackageDefinition } from '@/types';
 
 // Import your commands
-import setupCommand from './commands/setup';
-import buildCommand from './commands/build';
-import deployCommand from './commands/deploy';
+import setupCommand from './commands.md/setup';
+import buildCommand from './commands.md/build';
+import deployCommand from './commands.md/deploy';
 
 // Import migrations
-import { migrations } from './migrations';
+import { migrations } from './commands.md';
 
 const packageDefinition: IPackageDefinition = {
   metadata: {
@@ -536,10 +536,10 @@ async execute(options: any, context: any): Promise<void> {
 
 Now that you can create packages:
 
-1. ⚡ **[Master Command Definitions](./commands)** - Build sophisticated commands
-2. 🔄 **[Learn Migration System](./migrations)** - Handle version upgrades
-3. 💡 **[Explore Examples](./commands)** - See real-world implementations
-4. 🌟 **[Follow Best Practices](./best-practices)** - Build maintainable packages
+1. ⚡ **[Master Command Definitions](./commands.md)** - Build sophisticated commands
+2. 🔄 **[Learn Migration System](./commands.md)** - Handle version upgrades
+3. 💡 **[Explore Examples](./commands.md)** - See real-world implementations
+4. 🌟 **[Follow Best Practices](./commands.md)** - Build maintainable packages
 
 ---
 

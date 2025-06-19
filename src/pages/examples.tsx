@@ -53,10 +53,10 @@ const EXAMPLE_SECTIONS: ExampleSection[] = [
         filename: 'packages/my-package/index.ts',
         code: `import type { IPackageDefinition } from '@/types';
 
-import setupCommand from './commands/setup';
-import buildCommand from './commands/build';
-import deployCommand from './commands/deploy';
-import { migrations } from './migrations';
+import setupCommand from '/commands/setup';
+import buildCommand from '/commands/build';
+import deployCommand from '/commands/deploy';
+import { migrations } from '/commands';
 
 const packageDefinition: IPackageDefinition = {
   metadata: {

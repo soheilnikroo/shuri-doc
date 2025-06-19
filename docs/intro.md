@@ -101,4 +101,4 @@ Ready to get started? Choose your path:
 - 📦 **[Installation](./installation)** - Set up Shuriken CLI
 - 🎯 **[Core Concepts](./concepts)** - Understand the architecture
 - 🛠️ **[Creating Packages](./creating-packages)** - Build your first package
-- 💡 **[Examples](./commands)** - See real-world implementations
+- 💡 **[Examples](./commands.md)** - See real-world implementations

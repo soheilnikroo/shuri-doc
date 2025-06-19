@@ -39,7 +39,7 @@ const Features = () => {
       description:
         'Intuitive API with TypeScript support and comprehensive documentation.',
       color: 'red-800',
-      href: '/docs/creating-package',
+      href: '/docs/creating-packages',
     },
   ];
 
