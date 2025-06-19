@@ -15,7 +15,7 @@ const Features = () => {
       description:
         'Built on Inversion of Control principles for maximum flexibility and testability.',
       color: 'red-500',
-      href: '/docs/ioc-pattern',
+      href: '/docs/concepts',
     },
     {
       icon: <Zap className="h-8 w-8" />,
@@ -23,7 +23,7 @@ const Features = () => {
       description:
         'Add new commands in seconds with our modular design and hot-reload capabilities.',
       color: 'red-600',
-      href: '/docs/how-to-extend',
+      href: '/docs/commands',
     },
     {
       icon: <Shield className="h-8 w-8" />,
@@ -31,7 +31,7 @@ const Features = () => {
       description:
         'Production-ready with comprehensive error handling and graceful failures.',
       color: 'red-700',
-      href: '/docs/test',
+      href: '/docs/concepts',
     },
     {
       icon: <Code className="h-8 w-8" />,
@@ -39,7 +39,7 @@ const Features = () => {
       description:
         'Intuitive API with TypeScript support and comprehensive documentation.',
       color: 'red-800',
-      href: '/docs/typesafe',
+      href: '/docs/creating-package',
     },
   ];
 

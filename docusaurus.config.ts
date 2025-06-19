@@ -10,6 +10,8 @@ const config: Config = {
   tagline: 'Shuriken Doc - Shu Doc',
   favicon: 'img/favicon.ico',
   plugins: [tailwindPlugin],
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
